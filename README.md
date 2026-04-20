@@ -1,16 +1,62 @@
-# React + Vite
+# UML Flow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, web-based UML diagramming tool inspired by the visual node-based interface of n8n. Built with React, React Flow, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[View Live Project](https://umldesign.vercel.app/)
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Infinite Canvas:** Drag and drop nodes onto a sleek, dark-mode workspace with a dot background.
+- **Categorized Sidebar:** Access nodes grouped by diagram type (Class, Use Case, State, Activity, Sequence).
+- **Custom UML Nodes:**
+  - **Class Diagram:** Detailed Class nodes with headers, attributes, and methods.
+  - **Use Case Diagram:** Actor and Use Case nodes.
+  - **State Diagram:** State, Start, and End state nodes.
+  - **Activity Diagram:** Action, Decision, and Fork/Join nodes.
+  - **Sequence Diagram:** Lifeline nodes with multiple connection points along the line.
+- **Interactive Editing:** Double-click any node label to edit it directly on the canvas.
+- **Modern UI/UX:** Premium aesthetics with rounded corners, neon handles, and smooth transitions.
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Framework:** [React](https://reactjs.org/) (Vite)
+- **Diagramming Engine:** [React Flow](https://reactflow.dev/) (@xyflow/react)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AryanTelis2003/umldesign.git
+   cd umldesign
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the App
+
+Start the development server:
+```bash
+npm run dev
+```
+Open your browser and navigate to the URL provided in the terminal (usually `http://localhost:5173`).
+
+## 📖 How to Use
+
+1. **Add Nodes:** Drag any node from the left sidebar onto the canvas.
+2. **Connect Nodes:** Drag from a neon-colored handle (output) of one node to a handle (input) of another.
+3. **Edit Labels:** Double-click on the text inside a node to rename it. Press `Enter` to save or `Esc` to cancel.
+4. **Navigate:** Drag the canvas to move around; use the controls at the bottom-left to zoom and fit the view.
